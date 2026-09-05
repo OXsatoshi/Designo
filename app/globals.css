@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Figma Primitive Values */
+  --raw-peach: #e7816b;
+  --raw-black: #1d1c1e;
+  --raw-white: #ffffff;
+  --raw-light-peach: #fdf3f0;
+  --raw-dark-grey: #333136;
+  --raw-light-grey: #f1f3f5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --font-jost: var(--font-jost), sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-peach: var(--raw-peach);
+  --color-light-peach: var(--raw-light-peach);
+  --color-dark-grey: var(--raw-dark-grey);
+  --color-light-grey: var(--raw-light-grey);
+  --color-black: var(--raw-black);
+  --color-white: var(--raw-white);
+}
+@layer utilities {
+  /* H1: 48px / 48px line-height / Medium */
+  .text-h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* H2: 40px / 48px line-height / Medium / 1.2px tracking */
+  .text-h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.075em; /* ~1.2px */
+  }
+
+  /* H3: 20px / 26px line-height / Medium / 2px tracking */
+  .text-h3 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    letter-spacing: 0.1em; /* ~2px */
+  }
+
+  /* Body: 16px / 26px line-height / Regular */
+  .text-body {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
 }
