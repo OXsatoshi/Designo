@@ -1,7 +1,8 @@
-import Image from "next/image";
-import logo from "../../public/assets/shared/desktop/logo-dark.png";
-import MobileNav from "./navigation/mobile-nav";
+import logo from "../../../public/assets/shared/desktop/logo-dark.png";
 import DesktopNav from "./navigation/desktop-nav";
+import MobileNav from "./navigation/mobile-nav";
+
+import Image from "next/image";
 export default function Heading() {
   return (
     <header className="py-3 px-3 relative flex justify-between items-center">

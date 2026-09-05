@@ -3,12 +3,21 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import menu from "../../../public/assets/shared/mobile/icon-hamburger.svg";
-import close from "../../../public/assets/shared/mobile/icon-close.svg";
+import menu from "../../../../public/assets/shared/mobile/icon-hamburger.svg";
+import close from "../../../../public/assets/shared/mobile/icon-close.svg";
 import { navLinks } from "./nav-links";
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
+    };
 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   useEffect(() => {
     if (isOpen) {
       const scrollbarWidth =

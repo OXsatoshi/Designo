@@ -1,8 +1,8 @@
-import CategoryGrid from "./_components/category-grid";
-import Footer from "./_components/footer";
-import Heading from "./_components/heading";
-import Hero from "./_components/hero";
-import ValuesPropositions from "./_components/values-propos";
+import CategoryGrid from "./_components/home/category-grid";
+import Hero from "./_components/home/hero";
+import ValuesPropositions from "./_components/home/values-propos";
+import Footer from "./_components/layout/footer";
+import Heading from "./_components/layout/heading";
 
 export default function Home() {
   return (
