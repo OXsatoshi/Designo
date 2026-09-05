@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import menu from "../../../public/assets/shared/mobile/icon-hamburger.svg";
 import close from "../../../public/assets/shared/mobile/icon-close.svg";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const navRef = useRef<HTMLNavElement>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -75,18 +74,8 @@ ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         />
       </button>
 
-      {isOpen && (
-        <button
-          aria-label="Close menu"
-          onClick={() => setIsOpen(false)}
-          className="fixed inset-0 top-16 bg-black/50 z-30 sm:hidden"
-          aria-hidden="false"
-        />
-      )}
-
       <nav
         id="mobile-nav"
-        ref={navRef}
         aria-label="Mobile navigation"
         className={`absolute sm:static left-0 right-0 bottom-0 translate-y-full bg-black 
 text-white uppercase z-40 sm:hidden transition-all duration-300 ease-out origin-top ${
