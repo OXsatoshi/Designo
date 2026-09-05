@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import menu from "../../../public/assets/shared/mobile/icon-hamburger.svg";
 import close from "../../../public/assets/shared/mobile/icon-close.svg";
-
+import { navLinks } from "./nav-links";
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,13 +39,6 @@ export default function MobileNav() {
   const handleNavClick = () => {
     setIsOpen(false);
   };
-
-  const navLinks = [
-    { href: "/our-company", label: "Our Company" },
-    { href: "/locations", label: "Locations" },
-    { href: "/contact", label: "Contact" },
-  ];
-
   return (
     <>
       <button
