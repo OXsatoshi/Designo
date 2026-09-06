@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  /* Figma Primitive Values */
   --raw-peach: #e7816b;
   --raw-black: #1d1c1e;
   --raw-white: #ffffff;
@@ -22,22 +21,28 @@
 }
 @layer utilities {
   /* H1: 48px / 48px line-height / Medium */
-  .text-h1 {
+  .text-preset-1 {
     font-size: 3rem;
     line-height: 3rem;
     font-weight: 500;
   }
 
   /* H2: 40px / 48px line-height / Medium / 1.2px tracking */
-  .text-h2 {
+  .text-preset-2 {
     font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.075em; /* ~1.2px */
+  }
+  .text-preset-3 {
+    font-size: 2rem;
     line-height: 3rem;
     font-weight: 500;
     letter-spacing: 0.075em; /* ~1.2px */
   }
 
   /* H3: 20px / 26px line-height / Medium / 2px tracking */
-  .text-h3 {
+  .text-preset-4 {
     font-size: 1.25rem;
     line-height: 1.625rem;
     font-weight: 500;
