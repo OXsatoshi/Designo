@@ -19,7 +19,10 @@ const categories = [
 
 export default function CategoryGrid() {
   return (
-    <section aria-labelledby="categories-heading" className="px-6 my-20">
+    <section
+      aria-labelledby="categories-heading"
+      className="px-6 my-20 sm:px-8"
+    >
       <h2 id="categories-heading" className="sr-only">
         Our Design Services
       </h2>

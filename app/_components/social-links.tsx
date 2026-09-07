@@ -35,7 +35,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 export function SocialMediaList() {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className="flex items-center gap-4 sm:justify-center">
       {SOCIAL_LINKS.map((social) => (
         <li key={social.name}>
           <Link

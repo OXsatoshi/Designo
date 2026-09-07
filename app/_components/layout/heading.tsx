@@ -5,7 +5,7 @@ import MobileNav from "./navigation/mobile-nav";
 import Image from "next/image";
 export default function Heading() {
   return (
-    <header className="py-3 px-3 relative flex justify-between items-center">
+    <header className="py-3 px-3 sm:px-8 relative flex justify-between items-center">
       <div>
         <Image
           src={logo}

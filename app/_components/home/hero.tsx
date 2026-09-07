@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="pbs-10 px-3 text-center gap-3 flex flex-col justify-center items-center bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] 
+      className="pbs-10 px-3 sm:mx-8 rounded-2xl text-center gap-3 flex flex-col justify-center items-center bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] 
       bg-no-repeat bg-position-[left_center] overflow-hidden"
     >
-      <h1 className="text-preset-3 text-white ">
+      <h1 className="text-preset-3 text-white max-w-[25ch]">
         Award-winning custom designs and digital branding solutions
       </h1>
-      <p className="text-body text-white">
+      <p className="text-body text-white max-w-[45ch]">
         With over 10 years in the industry, we are experienced in creating fully
         responsive websites, app design, and engaging brand experiences. Find
         out more about our services.
