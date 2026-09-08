@@ -2,7 +2,7 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import Heading from "./_components/layout/heading";
 import Footer from "./_components/layout/footer";
-
+import "leaflet/dist/leaflet.css";
 const jost = Jost({
   subsets: ["latin"],
   weight: ["400", "500"],
