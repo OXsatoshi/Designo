@@ -8,7 +8,7 @@ interface Item {
 export default function AboutCard(project: Item) {
   return (
     <section
-      aria-labelledby="projects-heading"
+      aria-labelledby="about-card"
       className=" max-w-7xl mx-auto sm:px-8"
     >
       <div
@@ -38,7 +38,10 @@ export default function AboutCard(project: Item) {
           className="flex flex-col items-center justify-center gap-4 bg-light-peach p-8 
           group-hover:bg-peach transition-colors duration-300 min-h-[158px] sm:rounded-b-2xl"
         >
-          <h3 className="text-preset-4 text-peach group-hover:text-white transition-colors duration-300">
+          <h3
+            id="about-card"
+            className="text-preset-4 text-peach group-hover:text-white transition-colors duration-300"
+          >
             {project.title}
           </h3>
           <p className="text-body text-dark-grey group-hover:text-white transition-colors duration-300">
