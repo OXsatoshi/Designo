@@ -19,8 +19,7 @@ export default function RootLayout({
     <html lang="en" className={jost.variable}>
       <body className="font-jost bg-surface-base text-text-body antialiased">
         <Heading />
-        {children}
-
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
