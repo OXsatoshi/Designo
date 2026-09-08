@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+import clsx from "clsx";
 const categories = [
   {
     id: "web",
@@ -30,22 +32,25 @@ export default function CategoryGrid({
   return (
     <section
       aria-labelledby="categories-heading"
-      className="px-6 my-20 pbe-20 sm:px-8"
+      className="px-6 my-20 pbe-20 sm:px-8 max-w-[1110px] mx-auto md:px-8 md:my-10 md:pbe-0"
     >
       <h2 id="categories-heading" className="sr-only">
         Our Design Services
       </h2>
 
-      <ul className="flex flex-col gap-6">
+      <ul className="flex flex-col gap-6 md:grid md:grid-cols-2">
         {categories
           .filter((c) => c.id !== id)
-          .map((category) => (
-            <li key={category.href}>
+          .map((category, i) => (
+            <li
+              key={category.href}
+              className={clsx(id === "" && i === 0 && "row-span-2")}
+            >
               <Link
                 href={category.href}
                 className={`group relative flex flex-col items-center justify-center min-h-[250px] 
 rounded-2xl p-6 text-center text-white transition-all duration-300 overflow-hidden bg-cover 
-bg-center ${category.bgClassName}`}
+bg-center ${category.bgClassName} md:h-full`}
               >
                 <div
                   className="absolute inset-0 bg-black/50 group-hover:bg-peach/80 transition-colors duration-300"

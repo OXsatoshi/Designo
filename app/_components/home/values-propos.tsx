@@ -29,21 +29,20 @@ export default function ValuesPropos() {
   return (
     <section
       aria-labelledby="proposed-values-heading"
-      className="px-6 my-20 sm:px-8"
+      className="px-6 my-20 sm:px-8 max-w-[1110px] mx-auto md:px-8 md:my-10"
     >
-      {/* 1. Corrected ID match for accessibility */}
       <h2 id="proposed-values-heading" className="sr-only">
         Our Core Values
       </h2>
 
-      <ul className="flex flex-col gap-12 md:gap-8 max-w-7xl mx-auto">
+      <ul className="flex flex-col gap-12 md:gap-8 max-w-7xl mx-auto md:flex-row">
         {values.map((value) => (
           <li key={value.title}>
-            {/* 2. Responsive Layout Shift: flex-col on mobile, flex-row on tablet */}
-            <div className="flex flex-col sm:flex-row items-center md:items-center text-center md:text-left gap-12 md:gap-12">
-              {/* 3. Illustration & Background Circle Container */}
-              <div className="relative shrink-0 flex items-center justify-center w-[202px] h-[202px]">
-                {/* Background Pattern Layer */}
+            <div
+              className="flex flex-col sm:flex-row items-center md:items-center text-center 
+              md:text-left gap-12 md:gap-12 md:flex-col md:justify-center"
+            >
+              <div className="relative shrink-0 flex items-center justify-center w-[202px] h-[202px] md:flex-auto">
                 <div
                   aria-hidden="true"
                   className={`absolute inset-0 bg-[url('/assets/shared/desktop/bg-pattern-small-circle.svg')] bg-no-repeat bg-center bg-contain -z-10 ${value.bgRotationClass}`}
@@ -58,8 +57,10 @@ export default function ValuesPropos() {
                 />
               </div>
 
-              {/* 4. Text Content Column */}
-              <div className="flex flex-col items-center md:items-start gap-4 max-w-[450px] md:max-w-none">
+              <div
+                className="flex flex-col items-center  gap-4 max-w-[450px] 
+                md:max-w-none md:items-stretch text-center"
+              >
                 <h3 className="text-[20px] leading-[26px] font-medium tracking-[5px] uppercase text-dark-grey">
                   {value.title}
                 </h3>

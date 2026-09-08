@@ -8,9 +8,9 @@ function TalkAbout() {
   return (
     <div
       className="absolute top-0 sm:left-8 sm:right-8 max-w-7xl mx-auto -translate-y-1/2 flex flex-col justify-center items-center gap-8 text-center  bg-peach 
-      rounded-2xl py-10 px-6  text-white "
+      rounded-2xl py-10 px-6  text-white  max-w-[1110px] mx-auto"
     >
-      <div className="flex flex-col gap-4 max-w-[450px] text-center lg:text-left">
+      <div className="flex flex-col gap-4 max-w-[450px] text-center md:text-center">
         <h3 className="text-preset-2">Let’s talk about your project</h3>
         <p className="text-body">
           Ready to take it to the next level? Contact us today and find out how
@@ -18,7 +18,7 @@ function TalkAbout() {
         </p>
       </div>
       <Link
-        href="/about"
+        href="/our-company"
         className="bg-white text-dark-grey text-h3 px-6 py-4 rounded-lg font-medium uppercase 
         tracking-widest transition-colors duration-200 hover:bg-light-peach hover:text-white 
         active:bg-light-peach active:text-white focus-visible:outline-2 focus-visible:outline-offset-2 
@@ -31,9 +31,12 @@ function TalkAbout() {
 }
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col justify-center  items-center gap-10 py-6 px-6 pbs-60 mbs-60 bg-black sm:px-8">
+    <footer
+      className="relative flex flex-col justify-center  items-center gap-10 py-6 px-6 pbs-60 
+      mbs-60 bg-black sm:px-8"
+    >
       <TalkAbout />
-      <div className="sm:flex justify-between items-center w-full">
+      <div className="sm:flex justify-between items-center w-full max-w-[1110px] mx-auto">
         <div>
           <Link href="/" aria-label="Designo Homepage">
             <Image
@@ -45,7 +48,7 @@ export default function Footer() {
         </div>
         <nav
           aria-label="Footer navigation"
-          className={`text-white uppercase border-t border-t-dark-grey self-stretch sm:border-t-0`}
+          className={`text-white uppercase border-t border-t-dark-grey self-stretch sm:border-t-0 `}
         >
           <ul className="sm:flex ">
             {navLinks.map(({ href, label }) => (
@@ -63,7 +66,7 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-      <div className="sm:flex w-full">
+      <div className="sm:flex w-full w-full max-w-[1110px] mx-auto">
         <address
           className="not-italic w-full flex flex-col sm:flex-row sm:justify-stretch items-center justify-between 
         text-center sm:text-left gap-10 opacity-50 text-body text-white"

@@ -6,21 +6,23 @@ import LocationList from "../_components/out-company/location-list";
 export default async function Page() {
   return (
     <>
-      <div>
-        <Image
-          alt=""
-          src={"/assets/about/desktop/image-about-hero.jpg"}
-          width={476}
-          height={480}
-          className="w-full object-fit hidden sm:block"
-        />
-        <Image
-          alt=""
-          src={"/assets/about/mobile/image-about-hero.jpg"}
-          width={325}
-          height={370}
-          className="w-full object-fit sm:hidden"
-        />
+      <div className="max-w-[1110px] mx-auto sm:rounded-2xl overflow-hidden sm:my-8 md:flex ">
+        <div className="sm:px-8 w-full md:px-0">
+          <Image
+            alt=""
+            src={"/assets/about/desktop/image-about-hero.jpg"}
+            width={476}
+            height={480}
+            className="w-full object-cover hidden sm:block sm:rounded-t-2xl"
+          />
+          <Image
+            alt=""
+            src={"/assets/about/mobile/image-about-hero.jpg"}
+            width={325}
+            height={370}
+            className="w-full object-cover sm:hidden"
+          />
+        </div>
         <HeroBanner
           title="About Us"
           description="Founded in 2010, we are a creative agency that produces lasting results for 

@@ -67,7 +67,9 @@ export default function ContactForm() {
       {/* Hero Contact Card */}
       <section
         aria-labelledby="contact-heading"
-        className="relative bg-peach text-white overflow-hidden sm:rounded-2xl max-w-7xl mx-auto px-6 py-18 sm:px-14 sm:py-18 lg:px-24 lg:py-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10"
+        className="relative bg-peach text-white overflow-hidden sm:rounded-2xl max-w-7xl mx-auto 
+        px-6 py-18 sm:px-14 sm:py-18 lg:px-24 lg:py-14 flex flex-col lg:flex-row lg:items-center lg:justify-between 
+        gap-10 max-w-[1110px] mx-auto"
       >
         {/* Background Pattern */}
         <div
