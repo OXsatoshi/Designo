@@ -6,7 +6,7 @@ import MobileNav from "./navigation/mobile-nav";
 import Image from "next/image";
 export default function Heading() {
   return (
-    <header className="py-3 px-3 sm:px-8 relative flex justify-between items-center max-w-[1110px] mx-auto md:mx-auto">
+    <header className="py-3 px-3 sm:px-8 relative flex justify-between items-center max-w-[1110px] mx-auto md:mx-auto md:px-0">
       <Link href={"/"}>
         <Image
           src={logo}

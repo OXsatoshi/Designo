@@ -32,7 +32,7 @@ export default function CategoryGrid({
   return (
     <section
       aria-labelledby="categories-heading"
-      className="px-6 my-20 pbe-20 sm:px-8 max-w-[1110px] mx-auto md:px-8 md:my-10 md:pbe-0"
+      className="px-6 my-20 pbe-20 sm:px-8 max-w-[1110px] mx-auto md:px-0 md:my-10 md:pbe-0"
     >
       <h2 id="categories-heading" className="sr-only">
         Our Design Services
